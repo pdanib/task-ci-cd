@@ -1,0 +1,54 @@
+name: 🌈 CI/CD Flow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    name: 🧩 Etapa 1 — Integração Contínua (CI)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Clonando o repositório
+        uses: actions/checkout@v4
+
+      - name: 🧰 Configurando Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: 📚 Instalando dependências
+        run: echo "Simulação de instalação de dependências com npm install"
+
+      - name: 🧪 Rodando testes automáticos
+        run: echo "Simulação de testes automatizados com sucesso ✅"
+
+      - name: 💬 Mensagem personalizada
+        run: echo "CI concluída com sucesso 🚀✨"
+
+  deploy:
+    name: 🚀 Etapa 2 — Entrega Contínua (CD)
+    runs-on: ubuntu-latest
+    needs: build-and-test
+
+    steps:
+      - name: 📦 Clonando novamente
+        uses: actions/checkout@v4
+
+      - name: 🌍 Implantando site fictício
+        run: |
+          echo "Iniciando deploy criativo..."
+          echo "Site sendo atualizado 🌸"
+          echo "Deploy concluído com sucesso em $(date)"
+
+      - name: 🎉 Mensagem final
+        run: echo "Pipeline finalizado! Parabéns! 🌟 Tudo automatizado!"
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar testes
+        run: npm test
