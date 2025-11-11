@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: 📚 Instalando dependências
-        run: echo "Simulação de instalação de dependências com npm install"
+      - name: 📚 Instalando dependências (simulação)
+        run: echo "Instalando dependências... tudo certo! ✅"
 
       - name: 🧪 Rodando testes automáticos
-        run: echo "Simulação de testes automatizados com sucesso ✅"
+        run: echo "Testes simulados passaram com sucesso 🧡"
 
       - name: 💬 Mensagem personalizada
         run: echo "CI concluída com sucesso 🚀✨"
@@ -38,7 +38,7 @@ jobs:
       - name: 📦 Clonando novamente
         uses: actions/checkout@v4
 
-      - name: 🌍 Implantando site fictício
+      - name: 🌍 Implantando site
         run: |
           echo "Iniciando deploy criativo..."
           echo "Site sendo atualizado 🌸"
