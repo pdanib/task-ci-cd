@@ -24,7 +24,7 @@ O pipeline é acionado automaticamente em cada **push** ou **pull request** na b
 ## 🌟 Resultado
 Tudo é executado automaticamente no GitHub Actions, com mensagens personalizadas e simulações realistas das etapas CI/CD.
 
-![Status do pipeline](https://github.com/pdanib/task-ci-cd/actions/workflows/ci-cd.yml/badge.svg)
+![Status do pipeline](https://github.com/pdanib/task-ci-cd/actions/workflows/ci.yml/badge.svg)
 
 ---
 
