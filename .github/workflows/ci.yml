@@ -46,9 +46,3 @@ jobs:
 
       - name: 🎉 Mensagem final
         run: echo "Pipeline finalizado! Parabéns! 🌟 Tudo automatizado!"
-
-      - name: Instalar dependências
-        run: npm install
-
-      - name: Rodar testes
-        run: npm test
